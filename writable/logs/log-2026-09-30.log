@@ -1,0 +1,44 @@
+CRITICAL - 2026-09-30 08:06:43 --> DomainException: Provided key is too short
+[Method: POST, Route: api/login]
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 703.
+ 1 VENDORPATH\firebase\php-jwt\src\JWT.php(275): Firebase\JWT\JWT::validateHmacKeyLength('my-super-secret-key-123456789', 'SHA256')
+ 2 VENDORPATH\firebase\php-jwt\src\JWT.php(243): Firebase\JWT\JWT::sign('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMSIsImVtYWlsIjoidml2ZWtAZ21haWwuY29tIn0', Object(SensitiveParameterValue), 'HS256')
+ 3 APPPATH\Controllers\AuthController.php(65): Firebase\JWT\JWT::encode([...], Object(SensitiveParameterValue), 'HS256')
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AuthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter4-framework-b3359be\\public\\index.php')
+CRITICAL - 2026-09-30 08:19:36 --> ParseError: syntax error, unexpected token "`"
+[Method: GET, Route: upload]
+in APPPATH\Controllers\UploadController.php on line 81.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\codeigniter4-framework-b3359be\\app\\Controllers\\UploadController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\UploadController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\UploadController')
+ 4 SYSTEMPATH\Router\Router.php(792): class_exists('\\App\\Controllers\\UploadController')
+ 5 SYSTEMPATH\Router\Router.php(230): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH\CodeIgniter.php(829): CodeIgniter\Router\Router->handle('upload')
+ 7 SYSTEMPATH\CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter4-framework-b3359be\\public\\index.php')
+CRITICAL - 2026-09-30 08:19:58 --> ErrorException: Namespace declaration statement has to be the very first statement or after any declare call in the script
+[Method: GET, Route: upload]
+in APPPATH\Controllers\UploadController.php on line 4.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-09-30 08:20:16 --> ErrorException: Namespace declaration statement has to be the very first statement or after any declare call in the script
+[Method: GET, Route: upload]
+in APPPATH\Controllers\UploadController.php on line 4.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-09-30 08:21:10 --> ErrorException: Namespace declaration statement has to be the very first statement or after any declare call in the script
+[Method: GET, Route: upload]
+in APPPATH\Controllers\UploadController.php on line 4.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-09-30 08:22:50 --> ErrorException: Namespace declaration statement has to be the very first statement or after any declare call in the script
+[Method: GET, Route: upload]
+in APPPATH\Controllers\UploadController.php on line 4.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
